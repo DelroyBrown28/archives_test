@@ -1,0 +1,156 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #313131;
+    font-family: 'Inter', sans-serif;
+}
+
+/*-----MAIN PAGE------*/
+
+.local_date_time {
+    color: #fff;
+    display: flex;
+
+}
+
+#local_time {
+    margin: 20px 20px auto auto;
+
+    opacity: 0;
+}
+
+.main_wrap {
+    width: 80%;
+    height: calc(100% - 41px);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_contents_main,
+.center_contents_writer_signin {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 41px;
+
+
+}
+
+.center_contents_main {
+    z-index: 1;
+}
+
+.main_page_title_blurb {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    opacity: 0;
+
+}
+
+.main_page_title {
+    color: #fff;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 55px;
+}
+
+.main_page_blurb {
+    color: #ffffff93;
+    font-weight: 300;
+}
+
+.main_page_btns_wrap {
+    display: flex;
+    min-height: 160px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+
+
+}
+
+.main_page_btns {
+    height: 50px;
+    min-width: 290px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#read_posts_btn {
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+
+    opacity: 0;
+
+
+}
+
+#write_posts_btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+
+    opacity: 0;
+
+}
+
+/*---WRITER SIGN IN BOX---*/
+
+.center_contents_writer_signin {
+    position: absolute;
+    height: 400px;
+
+    display: none;
+
+}
+
+.writer_blurb {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+#password_input {
+    width: 290px;
+    color: #fff;
+}
+
+#writer_enter_btn {
+    width: 290px;
+    height: 50px;
+    margin: auto;
+    border: none;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.back_arrow {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly])+label {
+    color: #ffffff93;
+}
+
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #fff;
+    box-shadow: none;
+}
