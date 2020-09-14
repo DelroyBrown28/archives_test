@@ -83,6 +83,7 @@ html {
     height: 50px;
     min-width: 290px;
     border: none;
+    transition: 0.3s;
     cursor: pointer;
 
 }
@@ -136,6 +137,7 @@ html {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     cursor: pointer;
+    transition: 0.3s;
 
 }
 
@@ -153,4 +155,14 @@ input[type=password]:not(.browser-default):focus:not([readonly])+label {
 input[type=password]:not(.browser-default):focus:not([readonly]) {
     border-bottom: 1px solid #fff;
     box-shadow: none;
+}
+
+.main_page_btns:hover,
+#writer_enter_btn:hover {
+    transform: scale(1.1);
+}
+
+.main_page_btns:active,
+#writer_enter_btn:active {
+    transform: scale(0.7);
 }
